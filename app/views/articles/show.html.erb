@@ -5,4 +5,5 @@
 <br>
 
 <%= link_to "edit", edit_article_path %><br>
+<%= link_to "delete", article_path, method: :delete, data: {confirm: "are you sure?"} %><br>
 <%= link_to "back to articles listing", articles_path %>
