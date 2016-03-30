@@ -1,2 +1,57 @@
+$navbar-default-bg: #212121;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo{
+    color: #fff;
+    float: left;
+    font-size: 1.7em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.center{
+    text-align: center;
+}
+
+.jumbotron{
+    background-image: asset-url('plywood.jpg');
+    background-size: cover;
+    height: 500px;
+    h1{
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: -1px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .btn-xlarge{
+        font-size: 1.7em;
+    }
+}
+
+.footer{
+    border-top: solid 1px #eaeaea;
+    color: #777;
+    margin-top: 45px;
+    padding-top: 5px;
+    a:hover{
+        color: #212121;
+    }
+    small{
+        float: left;
+    }
+    ul{
+        float: right;
+        list-style: none;
+        li{
+            float: left;
+            margin-left: 16px;
+        }
+    }
+}
