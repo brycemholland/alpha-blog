@@ -3,8 +3,10 @@
 <%= link_to "create a new article", new_article_path %><br>
 <br>
 
-<% @articles.each do |a| %>
-    <%= link_to a.title, article_path(a) %><br>
-    <%= a.description %><br>
+<% @articles.each do |article| %>
+    <%= link_to article.title, article_path(article) %><br>
+    <%= article.description %><br>
+    <div>Created by: <%= article.user.username if article.user %></div>
+    <div><%= time_ago_in_words(article.created_at) %></div>
     <br>
 <% end %>
