@@ -3,4 +3,6 @@
 <%= link_to "create a new article", new_article_path %><br>
 <br>
 
+<%= will_paginate %>
 <%= render 'article', obj: @articles %>
+<%= will_paginate %>
